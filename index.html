@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charest="utf-8">
+		<meta name="viewport">
+		<link rel="stylesheet" href="style.css">
+		<title>Quiz_App</title>
+	</head>
+
+<link rel="stylesheet" href="style.css">
+<body>
+	<!--welcome page--------------------------->
+	<div class="start-page" id="start-page">
+		<h2>Game rules</h2>
+		<ul>
+			<li>The quiz consist of 10 questions</li>
+			<li>you will take 10 points for each right solve</li>
+			<li>You should solve the current question <br> to transmit to the next one</li>
+			<li>You have just 30 seconds for each question</li>
+			<li>The total time will be 5 minutes</li>
+		</ul>
+		<label>
+			Your name please<input type="text">
+		</label>
+		<button id="startPageButton">Next</button>
+	</div>
+	  
+	<!--game page------------------------------------------------->
+    <div id="quizContainer" class="container">
+        <div class="title">test Your self</div>
+        <div id="question" class="question"></div>
+        <label class="option"><input type="radio" name="option" value="1"/><span id="opt1"></span></label>
+        <label class="option"><input type="radio" name="option" value="2"/><span id="opt2"></span></label>
+        <label class="option"><input type="radio" name="option" value="3"/><span id="opt3"></span></label>
+        <label class="option"><input type="radio" name="option" value="4"/><span id="opt4"></span></label>
+        <button id="nextButton" class="next" onclick="loadNextQuestion()">Next Question</button>
+    </div>
+
+    <div id="result" class="container result" style="display:none;">
+
+	</div>
+	
+  <script src="script.js"></script>
+</body>
+</html>
